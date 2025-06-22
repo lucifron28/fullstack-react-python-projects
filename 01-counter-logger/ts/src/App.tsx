@@ -1,7 +1,8 @@
+import Counter from './components/Counter.tsx';
 
 function App() {
   return (
-    <h1 className="bg-amber-500">Hello, Typescript</h1>
+    <Counter />
   );
 }
 
