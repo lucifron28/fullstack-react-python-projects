@@ -22,7 +22,7 @@ This repo contains 10 full-stack projects, progressing from beginner to intermed
 
 | #  | Project | JS | TS | Backend | Notes |
 |----|---------|----|----|---------|-------|
-| 1 | Counter + Analytics Logger | ☐ | ☐ | FastAPI/Flask | Simple button + DB logging |
+| 1 | Counter + Analytics Logger | ✅ | ✅ | FastAPI/Flask | Simple button + DB logging |
 | 2 | Todo App with Login | ☐ | ☐ | FastAPI/Flask | Auth, filtering, protected routes |
 | 3 | Pomodoro with History | ☐ | ☐ | FastAPI/Flask | Timer, sessions, charts |
 | 4 | GitHub User Tracker | ☐ | ☐ | FastAPI (API proxy) | GitHub API + cache |
