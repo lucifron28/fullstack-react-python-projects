@@ -1,5 +1,4 @@
 from jose import jwt, JWTError
-from .models import User
 from datetime import datetime, timedelta, timezone
 
 SECRET_KEY = "not-really-a-secret"
