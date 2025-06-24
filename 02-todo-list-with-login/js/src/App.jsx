@@ -1,8 +1,16 @@
+import {Routes, Route, Navigate} from 'react-router-dom';
+import Login from './components/Auth/Login.jsx';
+// import Register from './components/Auth/Register.jsx';
+
 
 function App() {
   return (
-    <h1 className='flex justify-center items-center min-h-screen'>Hello, World</h1>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace/>} />
+        <Route path="/login" element={<Login />} />
+        {/*<Route path="/register" element={<Register />} />*/}
+      </Routes>
   );
 }
 
-export default App
+export default App;
