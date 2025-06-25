@@ -11,12 +11,15 @@ const Login = () => {
     };
 
     return (
+      <div className="login-register-form">
+        <h1 className="text-xl mb-5">Login</h1>
         <AuthForm
-            onSubmit={handleSubmit}
-            buttonText="Login"
-            errorMessage={errorMessage}
-            isRegister={false}
+          onSubmit={handleSubmit}
+          buttonText="Login"
+          errorMessage={errorMessage}
+          isRegister={false}
         />
+      </div>
     );
 }
 
