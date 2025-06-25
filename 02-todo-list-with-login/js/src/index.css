@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+:root {
+    --font-display: "Poppins", "sans-serif";
+    --background-color: hsl(220, 16%, 18%);
+    --color-brand: hsl(180, 89%, 40%);
+    --color-accent: hsl(162, 73%, 32%);
+    --color-accent-hover: hsl(162, 73%, 26%);
+    --radius-base: 0.5rem;
+    --todo-app-height: 60vh;
+    --todo-app-width: 60vw;
+}
+
+body {
+    @apply bg-[var(--background-color)] flex justify-center items-center min-h-screen;
+}
+
+.login-register-form {
+    @apply 
+        h-[var(--todo-app-height)] w-[var(--todo-app-width)] 
+        flex flex-col justify-center items-center 
+        bg-[var(--color-brand)] text-black p-8 
+        rounded-[var(--radius-base)] shadow-md;
+}
+
+.authForm {
+    @apply flex flex-col gap-5;
+}
+
+input {
+    @apply 
+        border border-[var(--color-accent)] focus:border-[var(--color-accent-hover)] 
+        outline-none px-2 py-1 rounded-xl transition bg-white text-black;
+}
+
+.lr-button {
+    @apply self-center bg-[var(--color-accent)] px-3 py-1.5
+        rounded-xl hover:cursor-pointer hover:bg-[var(--color-accent-hover)] 
+        text-white font-semibold transition;
+}
+
+.error {
+    @apply text-red-500 text-sm mt-2 text-center;
+}
